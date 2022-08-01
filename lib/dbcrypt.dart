@@ -435,7 +435,7 @@ class DBCrypt {
       rnd[i] = random.NextFromMax(256) - 128;
     }
 
-    rs.write("\$2a\$");
+    rs.write("\$2b\$");
     if (log_rounds < 10) {
       rs.write("0");
     }
